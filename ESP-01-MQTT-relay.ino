@@ -1,7 +1,7 @@
 /*
  * ESP-01S
  * 
- * Turn relay on and off using the mainroom feed from AdafruitIO
+ * Turn relay on and off using the 'mainroom' feed from AdafruitIO
  * 
  * 26/5/18
  * 
