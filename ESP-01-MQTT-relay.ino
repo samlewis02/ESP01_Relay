@@ -20,6 +20,7 @@ AdafruitIO_Feed *esp_01 = io.feed("mainroom"); // subscribe toggle switch input 
 #define RELAY_PIN 0
 ESP8266WebServer httpServer(80);
 ESP8266HTTPUpdateServer httpUpdater;
+// static IP settings
 IPAddress ip(192,168,1,130);
 IPAddress gateway(192,168,1,1);
 IPAddress subnet(255,255,255,0);
@@ -30,6 +31,7 @@ digitalWrite(RELAY_PIN, LOW); // relay off
 // start the serial connection
 Serial.begin(115200);
 WiFi.mode(WIFI_AP_STA);
+// static IP
 WiFi.config(ip,gateway,subnet);
 WiFi.begin(ssid, password);
 
